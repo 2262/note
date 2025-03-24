@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/C++/入门.md",
+                "file": "计算机/C++/引用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "入门"
+              "title": "引用"
             }
           }
         ]
@@ -150,13 +150,23 @@
               "icon": "lucide-list",
               "title": "内存分区 的大纲"
             }
+          },
+          {
+            "id": "73c19c01101ca9c9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,8 +183,8 @@
   },
   "active": "e66b8438163fe572",
   "lastOpenFiles": [
-    "计算机/C^M^M/入门.md",
     "计算机/C++/入门.md",
+    "计算机/C^M^M/入门.md",
     "计算机/C^M^M/引用.md",
     "计算机/微服务/http客户端Feign.md",
     "计算机/微服务/Ribbon负载均衡.md",
