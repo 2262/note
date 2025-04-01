@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/C++/函数.md",
+                "file": "计算机/C++/封装.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "函数"
+              "title": "封装"
             }
           }
         ]
@@ -184,6 +184,11 @@
   },
   "active": "e66b8438163fe572",
   "lastOpenFiles": [
+    "计算机/C++/类和对象.md",
+    "计算机/C++/封装.md",
+    "resources/Pasted image 20250401170113.png",
+    "resources/Pasted image 20250401165929.png",
+    "计算机/C++/函数.md",
     "计算机/Spring/Spring Framework.md",
     "计算机/Java/lambda表达式.md",
     "计算机/Java/泛型.md",
@@ -193,7 +198,6 @@
     "计算机/Elasticsearch/RestClient操作.md",
     "计算机/Elasticsearch/elasticsearch操作.md",
     "计算机/Elasticsearch/初识elasticsearch.md",
-    "计算机/C++/函数.md",
     "计算机/C++/引用.md",
     "计算机/C++/入门.md",
     "计算机/C^M^M/入门.md",
@@ -210,8 +214,6 @@
     "resources/fb85225f291b442194e4cd960cf94e5f.png",
     "resources/fa90e86d9b7546808de74edd5d7509a1.png",
     "resources/f9bf53b7545e4cf288f85d32dd4a8683.png",
-    "resources/f9745022d95443a2a32783cb4da88e46.png",
-    "resources/f8bbce33543d4991bb2db25cea70f700.png",
     "resources/87a40dfeedb144b9a9bdb90694fe52cc.md",
     "resources/055386ac83ad4f778a0fa6ef218ab801.md",
     "resources",
@@ -219,8 +221,6 @@
     "计算机/C^M^M/数据类型.md",
     "计算机/C^M^M/选择结构.md",
     "计算机/C^M^M/运算符.md",
-    "计算机/C^M^M/结构体.md",
-    "计算机/C^M^M/循环.md",
     "计算机/C^M^M",
     "计算机/微服务",
     "计算机/Spring",
