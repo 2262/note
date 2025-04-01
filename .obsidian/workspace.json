@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/C++/对象的初始化和清理.md",
+                "file": "计算机/C++/内存分区.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "对象的初始化和清理"
+              "title": "内存分区"
             }
           }
         ]
@@ -184,12 +184,21 @@
   },
   "active": "e66b8438163fe572",
   "lastOpenFiles": [
+    "计算机/C++/结构体.md",
+    "计算机/C++/引用.md",
+    "计算机/C++/指针.md",
+    "计算机/C++/循环.md",
+    "计算机/C++/选择结构.md",
+    "计算机/C++/运算符.md",
+    "计算机/C++/数据类型.md",
+    "计算机/C++/入门.md",
+    "计算机/C++/内存分区.md",
+    "计算机/C++/函数.md",
+    "计算机/C++/类和对象.md",
     "计算机/C++/封装.md",
     "计算机/C++/对象的初始化和清理.md",
-    "计算机/C++/类和对象.md",
     "resources/Pasted image 20250401170113.png",
     "resources/Pasted image 20250401165929.png",
-    "计算机/C++/函数.md",
     "计算机/Spring/Spring Framework.md",
     "计算机/Java/lambda表达式.md",
     "计算机/Java/泛型.md",
@@ -199,14 +208,10 @@
     "计算机/Elasticsearch/RestClient操作.md",
     "计算机/Elasticsearch/elasticsearch操作.md",
     "计算机/Elasticsearch/初识elasticsearch.md",
-    "计算机/C++/引用.md",
-    "计算机/C++/入门.md",
     "计算机/C^M^M/入门.md",
     "计算机/C^M^M/引用.md",
     "计算机/微服务/http客户端Feign.md",
     "计算机/微服务/Ribbon负载均衡.md",
-    "计算机/微服务/微服务技术栈.md",
-    "计算机/微服务/SpringCloud.md",
     "resources/ff54e496bff244bc9c6ac206074c31b5.png",
     "resources/fe509a39aa5d463abc47ce7a98253ab7.png",
     "resources/fe0d4116229049e18914b339ccbc8041.png",
@@ -215,12 +220,7 @@
     "resources/fb85225f291b442194e4cd960cf94e5f.png",
     "resources/fa90e86d9b7546808de74edd5d7509a1.png",
     "resources/f9bf53b7545e4cf288f85d32dd4a8683.png",
-    "resources/87a40dfeedb144b9a9bdb90694fe52cc.md",
-    "resources/055386ac83ad4f778a0fa6ef218ab801.md",
     "resources",
-    "计算机/微服务/初识微服务.md",
-    "计算机/C^M^M/数据类型.md",
-    "计算机/C^M^M/选择结构.md",
     "计算机/C^M^M",
     "计算机/微服务",
     "计算机/Spring",
