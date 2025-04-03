@@ -18,3 +18,44 @@ this指针不需要定义，直接使用即可
 this指针的用途：
 - 当形参和成员变呈同名时，可用this指针来区分
 - 在类的非静态成员函数中返回对象本身，可便用return\*this
+
+```c++
+#include <iostream>
+using namespace std;
+
+class Person {
+public:
+    Person(int age) {
+      //this指针指向 被调用的成员函数 所属的对象
+      this->age = age;
+    }
+    Person& PersonAddAge(Person& p) {
+        this->age += p.age;
+        // 返回对象本身
+        return *this;
+    }
+    int age;
+};
+//1 解决名称冲突问题
+void test01() {
+    Person p1(10);
+    cout << "p1的年龄 = " << p1.age << endl;
+
+}
+//2 返回对象本身用*this
+void test02() {
+    Person p1(12);
+    Person p2(12);
+    p2.PersonAddAge(p1).PersonAddAge(p1);
+    cout << "p2的年龄 = " << p2.age << endl;
+}
+int main() {
+    test02();
+    system("pause");
+    return 0;
+}
+```
+
+## 3.空指针访问成员函数
+C++中空指针也是可以调用成员函数，但是要注意有没有用到this指针
+如果用到this指针，需要加以判断保证代码的健壮性
