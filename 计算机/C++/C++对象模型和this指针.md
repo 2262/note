@@ -59,3 +59,41 @@ int main() {
 ## 3.空指针访问成员函数
 C++中空指针也是可以调用成员函数，但是要注意有没有用到this指针
 如果用到this指针，需要加以判断保证代码的健壮性
+
+## 4.const修饰成员函数
+**常函数：**
+- 成员函数后加 const 后我们称为这个函数为**常函数**
+- 常函数内不可以修改成员属性
+- 成员属性声明时加关键字mutable后，在常函数中依然可以修改
+
+**常对象：**
+- 声明对象前加const称该对象为常对象
+- 常对象只能调用常函数
+```cpp
+#include <iostream>
+using namespace std;
+//常函数
+class Person {
+public:
+    //this指针的本质：是一个指针常量 指针的指向不能修改
+    void showPerson() const {
+        //this->age = 10;
+        this->high = 180;
+        cout << "age = " << this->age << endl;
+    }
+    int age;
+    mutable int high;//特殊变量，即使在常函数中，也可以修改
+};
+//常对象
+void test01() {
+    const Person p;
+    //p.age = 10;
+    p.high = 180;
+    //常对象只能调用常函数
+    p.showPerson();
+}
+int main() {
+    system("pause");
+    return 0;
+}
+```
