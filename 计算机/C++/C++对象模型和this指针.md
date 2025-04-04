@@ -19,7 +19,7 @@ this指针的用途：
 - 当形参和成员变呈同名时，可用this指针来区分
 - 在类的非静态成员函数中返回对象本身，可便用return\*this
 
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
