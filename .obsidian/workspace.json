@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/C++/文件操作.md",
+                "file": "计算机/C++/模版.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "文件操作"
+              "title": "模版"
             }
           }
         ]
@@ -184,8 +184,9 @@
   },
   "active": "d446abbfe9acf6db",
   "lastOpenFiles": [
-    "计算机/C++/多态.md",
+    "计算机/C++/模版.md",
     "计算机/C++/文件操作.md",
+    "计算机/C++/多态.md",
     "计算机/C++/入门.md",
     "计算机/C++/选择结构.md",
     "计算机/C++/运算符.md",
@@ -213,7 +214,6 @@
     "计算机/lua/循环.md",
     "计算机/lua/变量.md",
     "计算机/lua/数据类型.md",
-    "计算机/MySQL/SQL优化.md",
     "resources/Pasted image 20250401170113.png",
     "resources/Pasted image 20250401165929.png",
     "resources/ff54e496bff244bc9c6ac206074c31b5.png",
