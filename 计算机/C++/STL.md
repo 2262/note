@@ -74,6 +74,18 @@ STL**容器**就是将运用**最广泛的一些数据结构**实现出来
 - `string(const string& str);`  使用一个string对象初始化来一个string对象
 - `string(int n char c);`            使用n个字符串c初始化
 
+**string复制操作**
+功能描述：
+- 给string字符串进行赋值
+赋值的函数原型
+- `string& operator=(const char *s);`         //cahr类型字符串赋值给当前的字符串
+- `string& operator=(const string &s);`     //把字符串s给当前的字符串
+- `string& operator=(char c);`                     //字符赋值给当前的字符串
+- `string& assign(const char *s);`              //把字符串s赃给当前的字符串
+- `string& assign(const char *s,int n);`  //把字符串s的前n个字符赋给当前的字符串
+- `string& assign(const string &s);`         //把字符串s赋给当前字符串
+- `string& assign(int n,cahr c);`              //用n个字符c赋给当前字符串
+
 **string成员函数**
 - `size()`：返回字符串的长度。
 - `empty()`：检查字符串是否为空。
