@@ -54,7 +54,7 @@ STL**容器**就是将运用**最广泛的一些数据结构**实现出来
 - std::unordered_map：无序映射。
 - std::unordered_multimap：无序多重映射。
 
-**string容器基本概念**
+#### string容器基本概念
 
 **本质：**
 - string是C++风格的字符串，而string本质上是一个类
@@ -77,14 +77,26 @@ STL**容器**就是将运用**最广泛的一些数据结构**实现出来
 **string复制操作**
 功能描述：
 - 给string字符串进行赋值
-赋值的函数原型
+赋值的函数原型：
 - `string& operator=(const char *s);`         //cahr类型字符串赋值给当前的字符串
 - `string& operator=(const string &s);`     //把字符串s给当前的字符串
 - `string& operator=(char c);`                     //字符赋值给当前的字符串
-- `string& assign(const char *s);`              //把字符串s赃给当前的字符串
+- `string& assign(const char *s);`              //把字符串s赋给当前的字符串
 - `string& assign(const char *s,int n);`  //把字符串s的前n个字符赋给当前的字符串
 - `string& assign(const string &s);`         //把字符串s赋给当前字符串
 - `string& assign(int n,cahr c);`              //用n个字符c赋给当前字符串
+
+**string字符串拼接
+功能描述：
+- 给string字符串进行赋值
+赋值的函数原型：
+- `string& operator+=(const char *s);`//重载+=操作符
+- `string& operator+=(const cahr c);`//重载+=操作符
+- `string& operator+=(const string& str);`//重载+=操作符
+- `string& append(const char *s);`//把字符串s连接到当前字符串结尾
+- `string& append(const char *s,int n);`//把字符串s的前n个字符连接到当前字符串结尾
+- `string& append(const string &s);`//同operator+=(const string& str)
+- `string& append(const string &s,int pos,int n);`//字符串s中从pos开始的n个字符连接到字符串结尾
 
 **string成员函数**
 - `size()`：返回字符串的长度。
