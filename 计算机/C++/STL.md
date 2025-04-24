@@ -131,14 +131,20 @@ string中单个字符存取方式有两种
 - `char& operator[](int n);`//通过\[]方式获取字符
 - `char& at(int n);`//通过at方法获取字符
 
-string插入和删除
-功能描述：
-对string字符串进行插入和删除字符操作
-函数原型：
-- string& insert(int pos,const char* s); //插入字符串
-- string& insert(int pos,const string& str);//插入字符串
-- string& insert(int pos,int n,char c);//在指定位置插入n个字符c
-- string& erase(int pos,int n = npos);//删除从pos开始的n个字符
+**string插入和删除**
+**功能描述：**
+- 对string字符串进行插入和删除字符操作
+**函数原型：**
+- `string& insert(int pos,const char* s);` //插入字符串
+- `string& insert(int pos,const string& str);`//插入字符串
+- `string& insert(int pos,int n,char c);`//在指定位置插入n个字符c
+- `string& erase(int pos,int n = npos);`//删除从pos开始的n个字符
+
+**string子串**
+**功能描述**：
+- 从字符串中获取想要的子串
+**函数原型：**
+- `string substr(int pos = 0,int n = npos) const;`//返回由pos开始的n个字符组成的
 
 **string成员函数**
 - `size()`：返回字符串的长度。
@@ -147,6 +153,8 @@ string插入和删除
 - `substr()`：获取子字符串。
 - `find()`：查找子字符串在主字符串中的位置。
 - `replace()`：替换字符串中的某些字符。
+
+
 ### 算法：问题之解法也
 
 有限的步骤，解决逻辑或数学上的问题，这一门学科我们叫做法（AIgorithms）

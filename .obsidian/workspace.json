@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "STL"
             }
+          },
+          {
+            "id": "03727a09ac3d657f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -182,7 +195,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d446abbfe9acf6db",
+  "active": "03727a09ac3d657f",
   "lastOpenFiles": [
     "计算机/C++/介绍.md",
     "计算机/C++/STL.md",
