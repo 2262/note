@@ -187,9 +187,62 @@ string中单个字符存取方式有两种
 - deque相对而言，对头部的插入删除速度回比vector快
 - vector访问元素时的速度会比deque快，这和两者内部实现有关
 ![](../../resources/Pasted%20image%2020250424194842.png)
-deque内部工作原理：
+**deque内部工作原理：**
 deque内部有个**中控器**，维护每段缓冲区中的内容，缓冲区中存放真实数据
 中控器维护的是每个缓冲区的地址，便得使用deque时像一片连续的内存空间
+![](../../resources/Pasted%20image%2020250424195137.png)
+deque容器的迭代器也是支持随机访问的
+
+**函数原型：**
+- `deque<T> deqT;`//默认构造形式
+- `deque(beg,end);`构造函数将\[beg,end]区间中的元素拷贝给本身。
+- `deque(n,elem);`//构造函数将n个elem拷贝给本身。
+- `deque(const deque &deq);`//拷贝构造函数
+
+#### stack容器
+**stack容器基本概念**
+概念：stack是一种先进后出(First In Last Out,FILO)的数据结构，它只有一个出口
+![](../../resources/Pasted%20image%2020250424200157.png)
+栈中只有顶端的元素才可以被外界使用，因此栈不允许有遍历行为
+栈中进入的数据称为**入栈**`push`
+栈中弹出的数据称为出栈`pop`
+
+**stack常用接口**
+功能描述：栈容器常用的对外接口构造函数：
+- `stack<T>stk;`//stack采用模板类实现，stack对象的默认构造形式
+- `stack(conststack&stk);`//拷贝构造函数
+
+赋值操作：
+- `stack&operator=(conststack&stk);`//重载等号操亻乍符
+
+数据存取：
+- `push(elem);`//向栈顶添加元素
+- `pop();`//从栈顶移除第一个元素
+- `top();`//返回栈顶元素
+
+大小操作：
+- `empty();`//判断堆栈是否为空
+- `size();`//返回栈的大小
+
+#### queue容器
+**queue基本概念**
+**概念：** Queue是一种先进先出(First In First Out,FIFO)的数据结构，他有两个出口
+![](../../resources/Pasted%20image%2020250424201539.png)
+队列容器允许从一端新增元素，从另一端移亍元素
+队列中只有队头和队尾才可以被外界便用，因此队列不允许有历行为
+队列中进数据称为**入队**`push`
+队列中出数据称为**出队**`pop`
+
+**queue常用接口**
+功能描述：栈容器常用的对外接口
+
+构造函数：queue<T>que;//queue采用模板类实现，queue对象的默认构造形式
+queue(constqueue&que);//拷贝构造函数
+
+赋值操作：·queue&operator=(constqueue&que);
+数据存取．//重载等号操亻乍符push(elem);POP();·《front();大小操亻乍：·empty();·size();//往队尾添加元素//从队头移除第一个元素//返回最后一个元素//返回第一个元素/／判断堆栈是否为空//返回栈的大小
+
+
 ### 算法：问题之解法也
 
 有限的步骤，解决逻辑或数学上的问题，这一门学科我们叫做法（AIgorithms）
