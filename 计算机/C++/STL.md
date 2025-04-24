@@ -126,8 +126,20 @@ STL**容器**就是将运用**最广泛的一些数据结构**实现出来
 - `int compare(const string &s) const;`//与字符串s比较
 - `int compare(const char *s) const;`//与字符串s比较
 
-string字符串存取
+**string字符串存取**
 string中单个字符存取方式有两种
+- `char& operator[](int n);`//通过\[]方式获取字符
+- `char& at(int n);`//通过at方法获取字符
+
+string插入和删除
+功能描述：
+对string字符串进行插入和删除字符操作
+函数原型：
+- string& insert(int pos,const char* s); //插入字符串
+- string& insert(int pos,const string& str);//插入字符串
+- string& insert(int pos,int n,char c);//在指定位置插入n个字符c
+- string& erase(int pos,int n = npos);//删除从pos开始的n个字符
+
 **string成员函数**
 - `size()`：返回字符串的长度。
 - `empty()`：检查字符串是否为空。
