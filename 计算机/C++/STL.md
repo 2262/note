@@ -97,6 +97,7 @@ STL**容器**就是将运用**最广泛的一些数据结构**实现出来
 - `string& append(const char *s,int n);`//把字符串s的前n个字符连接到当前字符串结尾
 - `string& append(const string &s);`//同operator+=(const string& str)
 - `string& append(const string &s,int pos,int n);`//字符串s中从pos开始的n个字符连接到字符串结尾
+
 **string查找和替换**
 **功能描述：**
 - 查找：查找指定字符串是否存在
@@ -107,13 +108,26 @@ STL**容器**就是将运用**最广泛的一些数据结构**实现出来
 - `int find(const char* s,int pos, int n) const;`//从pos位置查找s的前n个字符第一次位置
 - `int find(const char c,int pos = 0) const;`//查找字符c第一次出现的位置
 - `int rfind(const string& str,int pos = npos) const;`//查找str最后一次位置，从pos开始查找
--  `int rfind(const char* s,int pos = npos) const;`查找s
-- `int rfind(const char* s,int pos,int n) const;`
-- `int rfind(const char c,int pos = 0) const;`
-- `string& replace(int pos,int n,const string& str);`
-- `string& replace(int pos,int n,const cahr* s);`
-//查找st丨第一次出现亻立置，从pos开始查找//查找s第一次出现亻立置，从pos开始查找//从pos亻立置查找s的前n个字符第一冫欠亻立置//查找字符c第一次出现位置//查找str最后一次亻立置，从pos开始查找//查找s最后一次出现亻立置，从pos开始查找//从pos查找s的前n个字何最后一次亻立置//查找字符c最后一次出现位置//替庾从pos开始n个字符为字符串str//替瘼从pos开始的n个字符为字符串s
+-  `int rfind(const char* s,int pos = npos) const;`//查找str最后一次位置，从pos开始查找
+- `int rfind(const char* s,int pos,int n) const;`//从pos查找s的前n个字符最后一次位置
+- `int rfind(const char c,int pos = 0) const;`//查找字符c最后一次出现的位置
+- `string& replace(int pos,int n,const string& str);`//替换从pos开始n个字符为字符串str
+- `string& replace(int pos,int n,const cahr* s);`//替换从pos开始的n个字符为字符串s
 
+**string字符串比较**
+**功能描述 ：**
+- 字符串之间的比较
+**比较方式：**
+- 字符串比较是按字符的ASCII码进行对比
+=返回  0
+\>返回  1
+\<返回 -1
+**函数原型：**
+- `int compare(const string &s) const;`//与字符串s比较
+- `int compare(const char *s) const;`//与字符串s比较
+
+string字符串存取
+string中单个字符存取方式有两种
 **string成员函数**
 - `size()`：返回字符串的长度。
 - `empty()`：检查字符串是否为空。
