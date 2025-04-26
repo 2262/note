@@ -205,15 +205,15 @@ deque容器的迭代器也是支持随机访问的
 ![](../../resources/Pasted%20image%2020250424200157.png)
 栈中只有顶端的元素才可以被外界使用，因此栈不允许有遍历行为
 栈中进入的数据称为**入栈**`push`
-栈中弹出的数据称为出栈`pop`
+栈中弹出的数据称为**出栈**`pop`
 
 **stack常用接口**
 功能描述：栈容器常用的对外接口构造函数：
-- `stack<T>stk;`//stack采用模板类实现，stack对象的默认构造形式
-- `stack(conststack&stk);`//拷贝构造函数
+- `stack<T> stk;`//stack采用模板类实现，stack对象的默认构造形式
+- `stack(const stack &stk);`//拷贝构造函数
 
 赋值操作：
-- `stack&operator=(conststack&stk);`//重载等号操亻乍符
+- `stack& operator=(const stack &stk);`//重载等号操亻乍符
 
 数据存取：
 - `push(elem);`//向栈顶添加元素
@@ -236,11 +236,20 @@ deque容器的迭代器也是支持随机访问的
 **queue常用接口**
 功能描述：栈容器常用的对外接口
 
-构造函数：queue<T>que;//queue采用模板类实现，queue对象的默认构造形式
-queue(constqueue&que);//拷贝构造函数
+构造函数：
+- `queue<T> que;`//queue采用模板类实现，queue对象的默认构造形式
+- `queue(const queue &que)`;//拷贝构造函数
 
-赋值操作：·queue&operator=(constqueue&que);
-数据存取．//重载等号操亻乍符push(elem);POP();·《front();大小操亻乍：·empty();·size();//往队尾添加元素//从队头移除第一个元素//返回最后一个元素//返回第一个元素/／判断堆栈是否为空//返回栈的大小
+赋值操作：
+- `queue& operator=(const queue &que);`//重载等号操作符
+数据存取：
+- `push(elem);`//往队尾添加元素
+- `pop();`//从队头移除第一个元素
+- `back()`;//返回最后一个元素
+- `front();`;//返回第一个元素
+大小操作：
+- `empty();`//判断堆栈是否为空
+- `size();`//返回栈的大小
 
 
 ### 算法：问题之解法也
