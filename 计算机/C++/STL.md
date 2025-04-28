@@ -395,7 +395,7 @@ map和multimap**区别**：
 - `for_each`//遍历容器
 - `transform`//搬运容器到另一个容器中
 
-for_each
+**for_each**
 功能描述：
 - 实现遍历容器
 函数原型：
@@ -425,12 +425,6 @@ public:
         cout << a << " ";
     }
 };
-/*
-* 遍历算法 遍历容器中的元素
-* beg开始迭代器
-* end结束迭代器
-* _func函数或者函数对象
-*/
 void test01() {
     vector<int> v;
     for (int i = 0; i < 10; i++) {
@@ -445,6 +439,93 @@ int main() {
 }
 ```
 总结：for_each在实际开发中是最常用的遍历算法，需要熟练掌握
+
+**transform**
+功能描述：
+- 搬运容器到另一个容器中
+函数原型：
+ - `transform(iterator beg1, iterator end1, iterator beg2, _func);`
+beg1源容器开始迭代器
+end1源容器结束迭代器
+beg2目标容器开始迭代器
+\_func函数或者函数对象 
+```cpp
+#include <iostream>
+using namespace std;
+#include <algorithm>
+#include <vector>
+class Transform {
+public:
+    int operator()(int val) {
+        val = val * val;
+       return val;
+    }
+};
+void MyPrint(int val) {
+    cout << val << " ";
+}
+void test01() { 
+    vector<int> v;
+    for (int i = 0; i < 10; i++) {
+        v.push_back(i);
+    }
+    vector<int> v2;//目标容器
+    v2.resize(v.size());//目标容器需要提前开辟空间
+
+    transform(v.begin(), v.end(), v2.begin(), Transform());
+
+    for_each(v2.begin(), v2.end(), MyPrint);
+}
+int main() {
+    test01();
+    system("pause");
+    return 0;
+}
+```
+
+#### 常用查找算法
+学习目标：
+- 掌握常用的查找算法
+
+算法简介：
+- `find` 查找元素
+- `find_if` 按条件查找
+- `adjacent_find` 查找相邻重复元素
+- `binary_search` 二分查找法
+- `count` 统计元素个数
+- `count_if` 按条件统计元素个数
+
+**find**
+功能描述：
+- 查找指定元素，找到返回指定元素的迭代器，找不到返回结束迭代器end()
+
+函数原型：
+- `find(iterator beg,iterator end,value);`
+	//按值查找元素，找到返回指定位置迭代器，找不到返回结束迭代器位置
+	//beg开始迭代器
+	//end结束迭代器
+	//value查找的元素
+
+**find_if**
+功能描述：
+- 按条件查找元素
+
+函数原型：
+- `find_if(iterator beg iterator end,_Pred);`
+	//按值查找元素，找到返回指定位置迭代器，找不到返回结束迭代器位置
+	//beg开始迭代器
+	//end结束迭代器
+	//\_Pred函数或者渭词（返回bo引类型的仿函数）
+
+**adjacent_find**
+功能描述：
+- 查找相邻重复元素
+
+函数原型：adjacentfind(iteratorbeg,iteratorend);//查找相邻重复元素，返回相邻元素的第一个亻立置的迭代器//beg开始迭代器//end结束迭代器
+
+
+
+
 
 
 
