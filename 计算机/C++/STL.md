@@ -498,7 +498,6 @@ int main() {
 **find**
 功能描述：
 - 查找指定元素，找到返回指定元素的迭代器，找不到返回结束迭代器end()
-
 函数原型：
 - `find(iterator beg,iterator end,value);`
 	//按值查找元素，找到返回指定位置迭代器，找不到返回结束迭代器位置
@@ -509,7 +508,6 @@ int main() {
 **find_if**
 功能描述：
 - 按条件查找元素
-
 函数原型：
 - `find_if(iterator beg iterator end,_Pred);`
 	//按值查找元素，找到返回指定位置迭代器，找不到返回结束迭代器位置
@@ -520,16 +518,152 @@ int main() {
 **adjacent_find**
 功能描述：
 - 查找相邻重复元素
+函数原型：
+- `adjacentfind(iteratorbeg,iteratorend);`
+	//查找相邻重复元素，返回相邻元素的第一个位置的迭代器
+	//beg开始迭代器
+	//end结束迭代器
 
-函数原型：adjacentfind(iteratorbeg,iteratorend);//查找相邻重复元素，返回相邻元素的第一个亻立置的迭代器//beg开始迭代器//end结束迭代器
+**binary_search**
+功能描述：
+- 查找指定元素是否存在
+函数原型：
+- `bool binary_search(iterator beg,iterator end, value);`
+	//查找指定的元素，查到返回true否则false
+	//注意：在**无序序列中不可用**
+	//beg开始迭代器
+	//end结束迭代器
+	//value查找的元素
 
+**count**
+功能描述：
+- 统计元素个数
+函数原型：
+- `count(iterator beg, iterator end, value)`
+	//统计元素出次数
+	//beg开始迭代器
+	//end结束迭代器
+	//value统计的元素
 
+**count_if**
+功能描述：
+- 按条件统计元素个数
+函数原型：
+- `count_if(iterator beg, iterator end, _Pred)；`
+	//按条件统计元素出现次数
+	//beg开始迭代器
+	//end结束迭代器
+	//\_Pred谓词
 
+#### 常用排序算法
+学习目标：
+- 掌握常用的排序算法
 
+算法简介：
+- `sort` //对容器内元素进行排序
+- `random_shuffle` //洗牌指定范围内的元素随机调整次序
+- `merge` //容器元素合并，并存储到另一容器中
+- `reverse` //反转指定范围的元素
 
+**sort**
+功能描述：
+- 对容器内元素进行排序
+函数原型：
+- `sort(iterator beg, iterator end, _Pred);`
+	//按值查找元素，找到返回指定位置迭代器找不到返回结束迭代器位置
+	//beg开始迭代器
+	//end结束迭代器
+	//Pred谓词
 
+**random_shuffle**
+功能描述：
+- 洗牌 指定范围内的元素随机调整次序
+函数原型：
+- `random_shuffle(iterator beg, iterator end);`
+	//指定范围内的元素随机调整次序
+	//beg开始迭代器
+	//end结束迭代器
 
+**merge**
+功能描述：
+- 两个容器元素合并，并存储到另一容器中
+函数原型：
+- `merge(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest);`
+	//容器元素合并，并存储到另一容器中
+	//注意：两个容器必须是**有序的**
+	//beg1 容器1开始迭代器
+	//end1 容器1结束迭代器
+	//beg2 容器2开始迭代器
+	//end2 容器2结束迭代器
+	//dest  目标容器开始迭代器
 
+**reverse**
+功能描述：
+- 将容器内元素进行反转
+函数原型：
+- `reverse(iterator beg,iterator end);`
+	//反转指定范围的元素
+	//beg开始迭代器
+	//end结束迭代器
+
+#### 常用拷贝和替换算法
+学习目标：
+- 握常用的拷贝和替算
+
+法算法简介：
+- `cope` //容器内指定范围的元素拷贝到另一容器中
+- `replace` //将容器内指定范围的旧元素修改为新元素
+- `replace_if` //容器内指定范围满足条亻牛的元素替瘼为新元李
+- `swap` //互换两个容器的元素
+
+**copy**
+功能描述：
+- 容器内指定范围的元素拷贝到另一容中
+函数原型：
+- `copy(iterator beg,iterator end, iterator dest);`
+	//按值查找元素，找到返回指定亻立置迭代器找不到返回结束迭代器位置
+	//beg开始迭代器
+	//end结束迭代器
+	//dest目标起始迭代器
+
+**replace**
+功能描述：
+- 将容器内指定范围的旧元素修改为新元素
+函数原型：
+- `replace(iterator beg, iterator end, oldvalue, newvalue);`
+	//将区间内旧元素替成新元素
+	//beg开始迭代器
+	//end结束迭代器
+	//oldvalue旧元素
+	//newvalue新元素
+
+**replace_if**
+功能描述：
+- 将区间内满足条件的元素，替糜成指定元素
+函数原型：
+- `replaceif(iterator beg, iterator end, _pred, newvalue);`
+	//按条件替元素，满足条件的替成指定元素
+	//beg开始迭代器
+	//end结束迭代器
+	//\_pred谓词
+	//newvalue替换的新元素
+
+**swap**
+功能描述：
+- 互两个容器的元素
+函数原型：
+- `swap(container c1，container c2);`
+//互换两个容器的元素
+//c1容器1
+//c2容器2
+
+#### 常用算数生成算法
+学习目标：
+握常用的算术生成算法
+注意
+算数生成算法属于小型算法，使用时包含的头文件为`#include <numeric>`
+算法简介：
+fill//计算容器元素累计总和//向容器中添加元素
 
 
 ### 迭代器：容器和算法之间粘合剂
