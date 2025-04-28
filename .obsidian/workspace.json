@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/Python/标识符.md",
+                "file": "计算机/C++/STL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "标识符"
+              "title": "STL"
             }
           }
         ]
@@ -184,6 +184,13 @@
   },
   "active": "d446abbfe9acf6db",
   "lastOpenFiles": [
+    "计算机/Redis/Redis入门.md",
+    "计算机/Redis/Redis简介.md",
+    "计算机/Python/运算符.md",
+    "计算机/Python/数据类型.md",
+    "resources/Pasted image 20250427152904.png",
+    "resources/123456-20200923-1.svg",
+    "计算机/Python/标识符.md",
     "计算机/lua/文件IO.md",
     "计算机/lua/协同程序.md",
     "计算机/lua/运算符.md",
@@ -202,9 +209,6 @@
     "计算机/Java/Stream流.md",
     "计算机/Java/lambda表达式.md",
     "计算机/Java/泛型.md",
-    "计算机/Python/运算符.md",
-    "计算机/Python/数据类型.md",
-    "计算机/Python/标识符.md",
     "计算机/C++/STL.md",
     "resources/Pasted image 20250426171752.png",
     "resources/Pasted image 20250424201539.png",
@@ -216,10 +220,6 @@
     "resources/Pasted image 20250424193250.png",
     "计算机/C++/介绍.md",
     "计算机/C++/模版.md",
-    "计算机/C++/文件操作.md",
-    "计算机/C++/多态.md",
-    "resources/Pasted image 20250405173708.png",
-    "resources/Pasted image 20250405173611.png",
     "resources",
     "计算机/C^M^M",
     "计算机/微服务",
